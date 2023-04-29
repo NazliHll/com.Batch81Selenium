@@ -8,20 +8,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.List;
 
-public interface C02_findElements {
-    public static void main(String[] args) {
-        //amazon sayfasında kaç tane link olduğunu bulalım.
+public class C02_findElements { public static void main(String[] args) {
+    //amazon sayfasında kaç tane link olduğunu bulalım.
 
-        System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
-        WebDriver driver=new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.get("https://www.amazon.com");
+    System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
+    WebDriver driver=new ChromeDriver();
+    driver.manage().window().maximize();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+    driver.get("https://www.amazon.com");
 
-        List<WebElement> linkListesi=driver.findElements(By.tagName("a"));
+    List<WebElement> linkListesi=driver.findElements(By.tagName("a"));
 
-        System.out.println("sayfadaki link sayisi: "+linkListesi.size());
-        driver.close();
+    System.out.println("sayfadaki link sayisi: "+linkListesi.size());
+    driver.close();
 
-    }
+}
 }
