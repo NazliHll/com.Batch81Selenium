@@ -19,6 +19,7 @@ public class C04_getPageSource {
         }else {
             System.out.println("Kaynak kodu testi failed");
         }
+        driver.close();
 
     }
 }
