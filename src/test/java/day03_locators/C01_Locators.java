@@ -29,7 +29,7 @@ public class C01_Locators {
 
         //İlla her yazdığımız locator ile bulacağız diye bir şey yok. Doğru çalışıncaya kadar farklı farklı locatorları(Alternatif) deneriz.
         //html code ile ilgili bazı farklılıklar olabiliyor.Çalışan bir tane unique bulduk mu gerisi önemli değil.
-        //Eğer yanlış locate edilirse NoSuchElentException fırlatır.-Bunu gördüysek locator'ımızı gözden geçirmeliyiz.
+        //Eğer yanlış locate edilirse NoSuchElementException fırlatır.-Bunu gördüysek locator'ımızı gözden geçirmeliyiz.
 
     }
 }
