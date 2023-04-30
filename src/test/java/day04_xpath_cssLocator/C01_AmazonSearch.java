@@ -33,6 +33,7 @@ public class C01_AmazonSearch {
         List<WebElement>urunResimleriList=driver.findElements(By.className("s-image"));
         WebElement ilkUrunResmi=urunResimleriList.get(0);
         ilkUrunResmi.click();
+        driver.close();
 
     }
 }
